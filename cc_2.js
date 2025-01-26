@@ -36,12 +36,25 @@ let employee = {
     department: "Sales",
     isActive: true
   };
-  
-  // Step 2: Update the department property
+  // Update the department property
   employee.department = "Marketing";
   
-  // Step 3: Add a new property 'position' to the object
+  // Add a new property 'position' to the object
   employee.position = "Team Lead";
   
-  // Step 4: Log the updated object to the console
+  // Log the updated object to the console
   console.log("Updated Employee Record:", employee);
+
+  // Task 4 - Array of objects
+  // Declare an array of customer objects
+let customers = [
+    { name: "Krupa Jacob", email: "krupa.jacob36@gmail.com", purchaseAmount: 120.50 },
+    { name: "Skyler Jones", email: "skyler121@gmail.com", purchaseAmount: 85.75 },
+    { name: "Charlie Brown", email: "charlie08example.com", purchaseAmount: 98.00 }
+  ];
+  
+  // Step 2: Add a new customer object to the array
+  customers.push({ name: "Diana Prince", email: "diana12@gmail.com", purchaseAmount: 150.25 });
+  
+  // Step 3: Log the entire customer list to the console
+  console.log("Customer List:", customers);
