@@ -58,3 +58,29 @@ let customers = [
   
   // Step 3: Log the entire customer list to the console
   console.log("Customer List:", customers);
+
+  // Task 5 - Object Methods
+  // Declare the order object with properties: orderId, customerName, and amount
+let order = {
+    orderId: 2,
+    customerName: "Likha Jacob",
+    amount: 250.00,
+  
+    // Method to calculate tax (assume 10% tax rate)
+    calculateTax: function() {
+      return this.amount * 0.10;  // 10% tax rate
+    },
+  
+    // Method to log order details and tax amount to the console
+    logOrderDetails: function() {
+      const taxAmount = this.calculateTax();
+      console.log(`Order ID: ${this.orderId}`);
+      console.log(`Customer Name: ${this.customerName}`);
+      console.log(`Amount: $${this.amount.toFixed(2)}`);
+      console.log(`Tax Amount: $${taxAmount.toFixed(2)}`);
+    }
+  };
+  
+  // Call the logOrderDetails method to display the order details and tax
+  order.logOrderDetails();
+  
