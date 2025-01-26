@@ -27,3 +27,21 @@ let average = total / scores.length;
 // Log the updated array and the average score to the console
 console.log("Updated Scores:", scores);
 console.log("Average Score:", average);
+
+// Task 3 working with objects
+// Declare an object with initial properties
+let employee = {
+    name: "Krupa Jacob",
+    age: 24,
+    department: "Sales",
+    isActive: true
+  };
+  
+  // Step 2: Update the department property
+  employee.department = "Marketing";
+  
+  // Step 3: Add a new property 'position' to the object
+  employee.position = "Team Lead";
+  
+  // Step 4: Log the updated object to the console
+  console.log("Updated Employee Record:", employee);
